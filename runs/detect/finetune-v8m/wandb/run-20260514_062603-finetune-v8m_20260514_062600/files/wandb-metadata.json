@@ -1,0 +1,41 @@
+{
+  "os":  "Linux-3.10.0-1160.119.1.el7.x86_64-x86_64-with-glibc2.35",
+  "python":  "CPython 3.10.11",
+  "startedAt":  "2026-05-14T06:26:03.350500Z",
+  "args":  [
+    "--cache",
+    "--logger",
+    "wandb"
+  ],
+  "program":  "/root/midterm/finetune.py",
+  "codePath":  "finetune.py",
+  "codePathLocal":  "finetune.py",
+  "email":  "khwu21@m.fudan.edu.cn",
+  "root":  "/root/midterm/runs/detect/finetune-v8m",
+  "host":  "d540e9437cf0",
+  "executable":  "/usr/local/bin/python",
+  "cpu_count":  28,
+  "cpu_count_logical":  56,
+  "gpu":  "Tesla V100-PCIE-16GB",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "657404432384",
+      "used":  "656853880832"
+    }
+  },
+  "memory":  {
+    "total":  "269892550656"
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "Tesla V100-PCIE-16GB",
+      "memoryTotal":  "17179869184",
+      "cudaCores":  5120,
+      "architecture":  "Volta",
+      "uuid":  "GPU-c63182ab-fbfb-8754-ba20-0a7e5d9c5040"
+    }
+  ],
+  "cudaVersion":  "12.4",
+  "writerId":  "rxjgkwgbj2o7amymtt8acz3cmq0dna11"
+}
