@@ -1,11 +1,11 @@
-\# Midterm - YOLOv8 Finetune + Tracking
+# Midterm - YOLOv8 Finetune + Tracking
 
-\#\# Python environment
+## Python environment
 
-\#\#\# Recommended
+### Recommended
 - Python 3.8+ (CUDA optional)
 
-\#\#\# Dependencies
+### Dependencies
 ```bash
 pip install ultralytics opencv-python
 ```
@@ -23,15 +23,15 @@ pip install wandb
 ```
 
 
-\#\# Model weights
+## Model weights
 
 - Finetuned weights (default used by scripts):
 	- ./finetune-v8l/weights/best.pt
     - ./finetune-v8m/weights/best.pt
 
-\#\# How to run
+## How to run
 
-\#\#\# 1) Finetune
+### 1) Finetune
 ```bash
 python finetune.py \
 	--data trafic_data/data_1.yaml \
@@ -51,7 +51,7 @@ python finetune.py --logger wandb --wandb-project yolov8l-finetune
 Outputs will be under:
 - ./runs/detect/<name>/weights/best.pt
 
-\#\#\# 2) Tracking + detection on video
+### 2) Tracking + detection on video
 ```bash
 python stream_detection.py \
 	--source /root/midterm/IMG_7382.MOV \
@@ -66,7 +66,7 @@ python stream_detection.py \
 Results are saved under:
 - ./runs/track/exp/
 
-\#\#\# 3) Line-crossing counting
+### 3) Line-crossing counting
 ```bash
 python count.py \
 	--source /root/midterm/IMG_7382.MOV \
@@ -83,6 +83,6 @@ This script uses default settings of the tracker (BoT-SORT) and the line coordin
 Outputs will be under:
 - ./runs/count/exp/
 
-\#\# Notes
+## Notes
 - If you do not have a GPU, set `--device cpu`.
 - Change `--line` to match your video resolution. Format: x1,y1,x2,y2.
