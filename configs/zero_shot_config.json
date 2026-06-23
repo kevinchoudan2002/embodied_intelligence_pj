@@ -1,0 +1,58 @@
+{
+  "evaluation": {
+    "scene": "calvin_scene_D_eval",
+    "cameras": "static_and_gripper",
+    "robot": "panda",
+    "episodes": 10,
+    "max_steps": 360,
+    "tasks": [
+      "rotate_red_block_right",
+      "rotate_red_block_left",
+      "rotate_blue_block_right",
+      "rotate_blue_block_left",
+      "rotate_pink_block_right",
+      "rotate_pink_block_left",
+      "push_red_block_right",
+      "push_red_block_left",
+      "push_blue_block_right",
+      "push_blue_block_left",
+      "push_pink_block_right",
+      "push_pink_block_left",
+      "move_slider_left",
+      "move_slider_right",
+      "open_drawer",
+      "close_drawer",
+      "lift_red_block_table",
+      "lift_red_block_slider",
+      "lift_red_block_drawer",
+      "lift_blue_block_table",
+      "lift_blue_block_slider",
+      "lift_blue_block_drawer",
+      "lift_pink_block_table",
+      "lift_pink_block_slider",
+      "lift_pink_block_drawer",
+      "place_in_slider",
+      "place_in_drawer",
+      "stack_block",
+      "unstack_block",
+      "turn_on_lightbulb",
+      "turn_off_lightbulb",
+      "turn_on_led",
+      "turn_off_led",
+      "push_into_drawer"
+    ],
+    "output_dir": "results/zero_shot"
+  },
+  "wandb": {
+    "enable": true,
+    "project": "nndl-pj3-zero-shot",
+    "entity": null,
+    "group": "zero-shot-eval",
+    "tags": ["zero-shot", "envD"],
+    "notes": "Zero-shot evaluation on environment D"
+  },
+  "models": {
+    "envA": "results/final_model_envA_v2/checkpoints/050000/pretrained_model",
+    "envABC": "results/final_model_envABC/checkpoints/050000/pretrained_model"
+  }
+}
