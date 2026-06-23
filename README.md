@@ -387,14 +387,3 @@ python zero-shot-eval.py \
 5. **调试模式**：评估时加 `--gui --episodes 1` 可查看可视化效果
 6. **数据集合并后**：必须运行 `fix-parquet.py` 和 `generate-stats-json.py` 修复格式
 7. **并行执行**：如需并行运行多个 trial，建议改用 slurm 或 `--multi-run`
-
-## 引用
-
-本代码基于以下开源项目：
-- [LeRobot](https://github.com/huggingface/lerobot)
-- [ACT (Action Chunking Transformer)](https://github.com/tonyzhaozh/act)
-- [CALVIN Dataset](https://github.com/mees/calvin)
-
----
-
-现在从第一行 "# CALVIN ACT 超参数调优与跨环境评估" 一直复制到最后一行，粘贴到文本编辑器，保存为 README.md 即可。
